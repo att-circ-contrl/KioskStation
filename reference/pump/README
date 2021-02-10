@@ -1,0 +1,13 @@
+Executive summary:
+
+- Pinout is on page 17 of the manual, control scheme is on page 21.
+- Connector type is "M12" circular connector.
+
+- Use their grey cable if possible (p/n 48414).
+- White wire is ground, brown is _enable (short to ground), blue is pulse 
+(short to ground; pump triggers on release). Black is +15v (use for power),
+green is analog control (nc for this pump type).
+
+- Max voltage 24 V, max current 15 mA. They used a 10 kOhm PD in their 
+"adapter cable", so actual currents are likely much lower.
+- Pulse times must be at least 50 ms.
