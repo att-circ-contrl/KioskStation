@@ -35,7 +35,7 @@ on the sipper tube of the kiosk.
 * `pump-box` --
 Design documents for the control box for the LMI fluid pump used with the
 kiosk. The intention is that TTL pulses or user-fob button presses can
-trigger delivery of a fluid reward (water or juice) though the sipper tube.
+trigger delivery of a fluid reward (water or juice) through the sipper tube.
 * `reference` --
 Assorted reference documents (other than datasheets or vendor-supplied
 materials).
@@ -44,4 +44,4 @@ Vendor-provided documentation (other than datasheets). Under vendor copyright.
 * `wiring-diagrams` -- Wiring/cabling diagrams for kiosk-related equipment.
 
 
-_This is the end of the file.__
+_This is the end of the file._
