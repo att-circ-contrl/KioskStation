@@ -1,0 +1,17 @@
+The pump's holes are ovals 0.21" by 0.36" (so, #8 or #10 screws).
+They're on the back end of the pump, not the faceplate end.
+There needs to be at least 1.5" clearance from the holes for the back end of
+the pump.
+The flange the holes are in is about 0.26" thick. So, call it 1/4".
+The holes are 4-1/4" apart.
+
+
+Kiosk #1 has a PP slab 1-1/4" thick, with a 7/8" thick groove for the jar lip.
+It has holes tapped for #8-32 with 1-3/4" clearance behind them.
+The holes intersect the lip groove, with 3/8" tapped distance.
+
+...So, kiosk #1 needs #8-32" pan-head screws that are 5/8" long.
+
+
+Kiosks #2 and #3 mount the pump to a thinner metal plate using bolts.
+Thread and length are unclear.

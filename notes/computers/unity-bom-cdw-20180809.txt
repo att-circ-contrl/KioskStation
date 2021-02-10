@@ -1,0 +1,6 @@
+Machine (no RAM):  NUC6i7KYK  CDW p/n: 4085713   (543.99 USD)
+RAM:  Kingston DDR4 2x4gig  CDW p/n: 4039935   (102.99 USD)
+SSD:  (1 TB) Samsung MZ-N6E1T0BW  CDW p/n: 4934196   (239.99 USD)
+Network cable:  Tripp Lite 3' Cat5e  CDW p/n: 324473  (2.99 USD)
+
+Unit cost:  889.96 USD

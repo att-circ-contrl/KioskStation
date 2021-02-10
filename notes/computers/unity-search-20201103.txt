@@ -1,0 +1,13 @@
+Next-generation i7 with great graphics card (4-core, 3.1 GHz):
+(NUC8i7HVK) (CDW 5033016)
+https://www.cdw.com/product/intel-next-unit-of-computing-kit-nuc8i7hvk-mini-pc-core-i7-8809g-3.1-gh/5033016
+
+
+i9 (8-core, 2.4 GHz, 9"x10"x4" block) (terrible graphics):
+(NUC9i9QNX) (CDW 6057775)
+https://www.cdw.com/product/intel-next-unit-of-computing-kit-9-extreme-kit-nuc9i9qnx-mini-pc-core/6057775
+
+
+Xeon (8-core, E-2286M, 2.4 GHz, 9"x10"x4" block) (terrible graphics):
+(NUC9VXQNX) (CDW 6019259)
+https://www.cdw.com/product/intel-next-unit-of-computing-kit-9-pro-kit-nuc9vxqnx-compact-pc-xeon/6019259

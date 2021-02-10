@@ -1,0 +1,21 @@
+Suitable parts for hooking up a router to an external antenna:
+
+Item			Digikey p/n		Each	Qty	Total
+
+cable 4' RP-SMA RA	JR2R3-L1-4F-ND		34.00	1	34.00
+antenna dome RP-SMA	ANT-DB1-WRT-MON-RPS-ND	12.94	1	12.94
+Washer 1/2" galv	H840-ND			0.0309	2	0.06
+
+Total:								47.00
+
+
+Suitable parts for hooking up a Unity computer to an external antenna:
+
+
+Item			Digikey p/n		Each	Qty	Total
+
+cable 20" IPEX MHF4/SMA	1837-1033-ND		3.25	1	3.25
+antenna dome SMA	ANT-DB1-WRT-MON-SMA-ND	12.94	1	12.94
+Washer 1/2" galv	H840-ND			0.0309	2	0.06
+
+Total:								16.25

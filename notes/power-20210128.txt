@@ -1,0 +1,137 @@
+(UPS and power consumption advice, with personal information redacted.)
+
+(This summarizes my personal experiences with the named equipment, and
+does not represent the views of my employer or constitute professional
+advice.)
+
+
+The UPSs we're using in lab space are the Eaton 9PX3000RT model. This lacks
+some of the features of their larger UPSs but can run off of 110V from a
+wall outlet, and is still enough to run ephys equipment and one high-power
+computer for long enough to safely withdraw probes during a prolonged loss
+of power. My planning scenario was "power goes out while the experimenter
+is in the bathroom". Planned worst-case UPS run-time was about 30 minutes.
+If more than one computer is on the circuit, I'd either use a second UPS for
+it or add one of the external battery packs for that series of UPS (model
+9PCEBM72VRT).
+
+
+There are two main vendors of UPSs selling in the US: APC and Eaton. Eaton
+tends to be slightly more expensive but I'm told that APC tends to over-rate
+their components, so you need to over-spec the power rating if you're using
+an APC UPS, and the end result is about the same cost-wise. I use
+consumer-grade APC UPSs at home and spec Eaton's enterprise-grade UPSs for
+our lab.
+
+
+There are several considerations when buying an enterprise-grade UPS:
+
+- Power and run-time are independent parameters. Most UPSs give about 15
+minutes of backup at their rated maximum power using the internal batteries.
+You can extend that run-time by connecting or wiring in external battery
+packs (very common). What I did instead was over-spec the UPS (a 3 kVA UPS
+running a 1.5 kVA load will run for 20-30 minutes without external
+batteries).
+
+- Estimate worst-case power draw by looking at the ratings of computer
+power supplies and of your equipment. Bear in mind that UPSs _and_
+computers usually quote VA or kVA rather than W or kW. These are not
+necessarily the same (it depends on assumptions made about the load), so
+when in doubt keep everything in "kVA" and assume that 1 kW = 1.5 kVA. For
+runtime reasons _and_ to avoid excessive wear on the UPS, I recommend using
+a UPS with a kVA rating double the maximum expected load. That should give
+you a run-time of about half an hour.
+
+- UPSs can be rack-mounted or indepent tower-style models (PC style for the
+smaller ones, or a mini-rack of their own for the larger ones). If you're
+already rack-mounting the ephys equipment, a rack-mount UPS can be
+convenient, but it depends on how your space is set up. UPSs and their
+batteries are very heavy, so with heavier rack-mounted equipment, make sure
+you have a way to safely mount it (two people or a lift cart, and enough
+space around the rack to fit).
+
+- UPSs may be configured to output 110 V, 220 V, or both. Likewise, the
+"power distribution units" (rack-mounted power strips) are rated to either
+110 V or 220 V. This is because most computer equipment these days tolerates
+220 V input, and using that voltage means you only need half the current
+running through the cabling, which is important when you have a rack full of
+computers each burning multiple kW. For your purposes, this means you have
+to check that there are enough 110 V outlets for your equipment, and/or that
+you need to buy a PDU with 110 V style plugs (the 220 V plugs have the same
+pins but with a reverse-polarity shroud, if I remember correctly).
+
+Normal 110 V outlets are "NEMA 5-15". The 220 V outlets are "C13/C14".
+C13/C14 is also used for the _input_ to computer power supplies; a normal
+computer cord is NEMA 5-15 male to C13/C14 female. A 220 V computer cord is
+C13/C14 on both ends. You can find photos at:
+
+https://www.cablestogo.com/learning/connector-guides/power
+
+- UPSs can run off of single-phase 110 V, two-phase 220 V, or three-phase
+208 V. Anything larger than the 9PX series will need 2- or 3-phase.
+Anything that draws more than 30 amps will need to be wired in rather than
+plugging in (there are 30-amp plugs in one of our labs for our eventual
+system's big UPS; I think they were 3-phase but I'd have to doublecheck).
+The main downside to wiring in a UPS is that you can't move it afterwards.
+
+- Some UPS models will let you plug in external battery packs; others need
+them to be wired in. Anything that needs to be "wired in", even if it's
+simple to do, requires an electrician for legal reasons.
+
+- The big UPSs have "N+1 redundancy". This means they'll continue working
+even if one of the power modules burns out, and the power modules are
+designed to be safely swapped while the UPS is running. This is the sort of
+thing you want for medical equipment. Unfortunately the big UPSs run about
+$10k-$20k and have to be wired in, so we're not presently using N+1
+redundant UPSs.
+
+- Enterprise-grade computers usually have the option of coming with
+redundant power supplies. Since power supplies are often one of the first
+things that goes on a computer, you have the option of using such a machine
+to run your ephys equipment so that it's more likely to keep running after
+its first hardware failure (letting you safely disengage the equipment). In
+practice, we aren't presently doing this ourselves (our big system's
+machines are set up like this but that system is not presently in service).
+A computer built to enterprise specs (intended to be running in a rack 24/7)
+costs about $1000-$2000 more than a comparable consumer-grade machine.
+
+
+Considerations with our building:
+
+- There is an emergency generator but it's already over-loaded. So, we
+can't add circuits to it. If we could, then a 10-minute backup time would
+be fine (it just has to keep power steady while the generator kicks in and
+filter the generator's start-up transient). Persuading the administration
+to buy a larger backup generator is a long-term option if there are
+multiple labs worried about operating during power failures.
+
+- The building's panel circuits are also near-capacity. Wiring in new
+circuits, especially ones that might take large amounts of power (like the
+outlets for our planned big UPS), can take creativity. What they did for us
+was run a branch off of the main trunk line to a second breaker panel near
+our lab, rather than trying to assign breakers from the main panel to us
+(since there weren't enough left). They might have to do something similar
+for you, depending on your needs.
+
+- This suggests to me that the building itself is near capacity for power.
+This probably isn't an immediate problem, but I expect that if all of the
+building's circuits started drawing something close to their rated power
+the main breaker would trip before any of the panel breakers did. The
+practical upshot of this is that the electricians wiring in your circuits
+will take a bit of time to figure out which of the building's phases should
+be supplying your lab, to keep the load balanced, and may come to you with
+unusual requirements for your setup (related to how the building supplies
+and distributes power).
+
+
+Long story short, for 110 V equipment that can work with the power your lab
+presently has, Eaton's "9PX" series is a reasonable choice, using a UPS
+rating of twice your expected load. If you plan to run anything really
+power-hungry (such as our big setup's computers), more exotic solutions are
+needed, with associated setup issues.
+
+CDW carries Eaton's UPSs up to and including the middle-range enormous ones,
+and is one of our university's standard vendors, so sourcing from them is
+probably the option of least hassle if you go this route.
+
+I hope that this information is useful to you!

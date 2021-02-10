@@ -1,0 +1,12 @@
+From 18 Oct 2018 paper notes:
+
+- Holes in viewport plates should be larger for more alignment slop; some of 
+the plates are very difficult to remove due to rubbing on threads.
+
+- Pump mounting brackets should be 1" rather than 1.5" wide, to avoid 
+conflict with anything else attached to the 1" extrusion.
+
+- Fan mounts need an adapter plate for 120mm fans (implemented as 6" fans).
+
+- Cannot mount twist-style t-slot cable holders to 1" rail due to enclosure 
+sheet metal extending past the edge of the extrusion; trim if possible.

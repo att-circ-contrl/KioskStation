@@ -1,0 +1,10 @@
+Fan parts from 20181004-digikey:
+
+fan 120mm 12V 34dBA:	259-1472-nd
+medical 12V 2A wart:	1145-1240-nd
+barrel splitter 2.1mm:	1528-1455-nd
+barrel 2.1mm F to wire:	839-1145-nd
+
+From 2021:
+
+fan 80mm 12V 33dBA:	259-1629-nd
