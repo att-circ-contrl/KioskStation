@@ -1,0 +1,384 @@
+% Kiosk manual - Installation and setup.
+% Written by Christopher Thomas.
+
+\chapter{Kiosk Setup}
+\label{sect-setup}
+
+\section{Checklist}
+\label{sect-setup-checklist}
+
+First-time kiosk setup involves assembling fittings on the kiosk housing 
+and installing and cabling electronic equipment inside the electronics bay.
+A summary of the steps involved is shown below; photographs and additional
+notes are given in Section \ref{sect-setup-howto}.
+A cabling diagram for the kiosk is shown in Figure \ref{fig-kiosk-cabling}.
+
+Initial mechanical work:
+\begin{itemize}
+\item Separate the kiosk face from the electronics bay.
+\item With the kiosk face:
+\begin{itemize}
+\item Remove the outer viewport window from ports that will have cameras
+installed.
+\item Remove both viewport windows from the port that will have the
+cleaning hatch installed.
+\item Remove the pump bracket from the side which has the cleaning port.
+\item Install the cleaning hatch in its port.
+\item Install the pump mounting plate on the remaining pump bracket. The pump
+is away from the face of the kiosk, towards the direction of the electronics
+bay.
+\item Install light filter plates on the viewport windows that will have
+cameras. The synchronization LEDs should be close to the camera mounting
+arms.
+\end{itemize}
+\item With the electronics bay:
+\begin{itemize}
+\item Remove internal shelves.
+\item Remove ventilation grilles.
+\item Remove fan dummy panels from either the top level or both levels
+(for mounting two or four fans, respectively).
+\item Remove the external wiring panel from the side nearest the pump.
+\item Remove the monitor tray.
+\item Seat the touch screen in the monitor tray. Annotate the back of the
+monitor tray to show connector locations.
+\item Install the monitor and tray in the electronics bay.
+\item Install the fans and fan guards.
+\item Line the ventilation grilles with HVAC tape to render them glove-safe.
+\item Cut filter pads and install the ventilation grilles with filters in
+the electronics bay.
+\end{itemize}
+\end{itemize}
+
+Electronics work:
+\begin{itemize}
+\item \textbf{NOTE} - This does not include eye-tracker installation.
+Power cabling is placed in the eye-tracker bay.
+\item \textbf{NOTE} - During each cabling step, excess cable length should
+be coiled and zip-tied, and routed cables should be zip-tied to cable mounts
+where appropriate.
+\item Install power distribution bars at the bottom of the bay (turned off).
+\item Reinstall bay shelves.
+\item Install fan power plug and connect fans.
+\item Install touch screen power supply. Connect power, display, and USB
+cables to the touch screen.
+\item Install small monitor, keyboard, and mouse on the right-hand side of
+the middle shelf. Install monitor power supply in the bottom of the bay.
+Route data cables to the top shelf.
+\item Install router with two ethernet cables connected to LAN ports on the
+left-hand side of the middle shelf. Install router power supply in the 
+bottom of the bay. Route ethernet cables to the top shelf. Ensure that the
+router's power switch is turned on, if it has one.
+\item Install Neurarduino on the top shelf, left-hand side.
+\item Install pump reward box on the top shelf, left-hand side. Cable the
+pump reward box to the Neurarduino.
+\item Install pump reward fob. Use hook-and-loop cable ties to hang it from
+the electronics bay carrying handle on the pump side of the unit. Cable the
+fob to the pump reward box.
+\item Install the Unity machine's power supply in the bottom of the bay.
+Route it to the left-hand side of the top shelf.
+\item Install Unity machine on top of the Neurarduino. Attach Unity machine
+cable connections (which should already be routed to the top shelf).
+\item Install LED box on the top shelf, right-hand side. Route BNC cables 
+from the LED box out appropriate camera cabling ports; do not coil the 
+LED BNC cables yet.
+\item Install the NeuroCam machine's power supply in the bottom of the bay.
+Route it to the right-hand side of the top shelf.
+\item Install NeuroCam and NeuroCam USB hub. Cable the LED box to the
+USB hub and the USB hub to the NeuroCam. Attach the NeuroCam power and
+ethernet cables.
+\end{itemize}
+
+Electronics tests:
+\begin{itemize}
+\item Turn on power bar. Press power switches on Unity and NeuroCam
+computers. Wait 60 seconds for machines to boot.
+\item Check that the Unity machine's login display is shown on the touch 
+screen and on the small monitor.
+\item Check that an authorized machine can connect to the NeuroCam via the
+kiosk's router.
+\item Perform graceful shutdowns of the Unity machine and NeuroCam machine.
+\item Turn off power bar.
+\end{itemize}
+
+Final mechanical work:
+\begin{itemize}
+\item Reattach the kiosk face to the electronics bay.
+\item Install cameras.
+\item Screw pump control cable on to pump. Use pliers for this.
+\item Install pump.
+\item Connect LED BNC cables to camera port LEDs. Coil and zip-tie excess 
+cabling \textit{inside} the electronics bay. Do \textbf{not} zip-tie BNC
+cables to the kiosk face exterior frame unless this is unavoidable. If it
+is unavoidable, keep the zip-ties loose enough that they can be cut without
+damaging the BNC cables.
+\item Connect camera USB cables to the NeuroCam computer. Coil excess
+cabling \textit{inside} the electronics bay. Zip-tie the coils, but do
+\textbf{not} zip-tie the coils or cables to cable mounts (it must be possible
+to disconnect and withdraw the camera USB cables). Exterior camera cables
+may be zip-tied to the kiosk face's frame.
+\item Connect the pump control cable to the pump box. Coil excess cabling
+\textit{inside} the electronics bay. Zip-tie the coils, but do \textbf{not}
+zip-tie the coils or cables to cable mounts (it must be possible to
+disconnect and withdraw the pump control cable).
+\item Zip-tie cables that pass through the lower exterior cable entry port
+to the adjacent handle. Keep this loose enough that it can be cut without
+damaging the cables.
+\item Replace camera cover.
+\item Install pump hoses.
+\item Mount the kiosk so that the underside is accessible.
+\item Install sipper tube.
+\item Make remaining pump hose connections.
+\end{itemize}
+
+\begin{figure}[h]
+\includegraphics[width=0.99\columnwidth]{cabling/kiosk-cabling-2019.pdf}
+\caption{Kiosk cabling daigram.}
+\label{fig-kiosk-cabling}
+\end{figure}
+
+\clearpage
+\section{Kiosk Assembly Notes}
+\label{sect-setup-howto}
+
+%
+%
+\subsection{Viewports and Hatch}
+\label{sect-setup-howto-viewports}
+
+\begin{tabular}{ccc}
+\includegraphics[width=0.4\columnwidth]
+{photos/install-20181106/face-before.jpg} &
+~~~ &
+\includegraphics[width=0.4\columnwidth]
+{photos/install-20181106/hatch.jpg} \\
+\end{tabular}
+
+%
+%
+\clearpage
+\subsection{Light Filters and Cameras}
+\label{sect-setup-howto-lightfilt}
+
+The LEDs should be as close as possible to the camera mounts. The cameras
+must have LEDs in their field of view when in their final positions.
+
+\begin{tabular}{ccc}
+\includegraphics[height=0.55\columnwidth]
+{photos/install-20181106/lightfilts.jpg} &
+~~~ &
+\includegraphics[height=0.55\columnwidth]
+{photos/install-20181106/cameras.jpg} \\
+\end{tabular}
+
+%
+%
+\clearpage
+\subsection{Electronics Bay Prep}
+\label{sect-setup-howto-bay}
+
+\begin{tabular}{ccc}
+\includegraphics[width=0.4\columnwidth]
+{photos/install-20181106/bay-before.jpg} &
+~~~ &
+\includegraphics[width=0.4\columnwidth]
+{photos/install-20181106/bay-stripped.jpg} \\
+ & ~ & \\
+\multicolumn{3}{c}{%
+\includegraphics[width=0.85\columnwidth]
+{photos/install-20181106/bay-parts.jpg}%
+} \\
+\end{tabular}
+
+%
+%
+\clearpage
+\subsection{Touch-Screen Tray}
+\label{sect-setup-howto-touch}
+
+\begin{tabular}{ccc}
+\includegraphics[height=0.45\columnwidth]
+{photos/install-20181106/ts-installed.jpg} &
+~~~ &
+\includegraphics[height=0.45\columnwidth]
+{photos/install-20181106/ts-labels.jpg} \\
+\end{tabular}
+
+%
+%
+\clearpage
+\subsection{Fans}
+\label{sect-setup-howto-fans}
+
+The photographed version of the kiosk needed adapter plates to mount the
+fans. Later versions mount the fans directly to the electronics cabinet.
+
+\textbf{NOTE} - Fans on one side blow into the electronics bay (intake fans),
+and fans on the other side blow out of the electronics bay (exhaust fans).
+One pair of fans has the stickers facing in and one pair has the stickers
+facing out.
+
+\begin{center}
+\begin{tabular}{ccc}
+\includegraphics[height=0.3\columnwidth]
+{photos/install-20181106/fan-parts.jpg} &
+~~~ &
+\includegraphics[height=0.3\columnwidth]
+{photos/install-20181106/fan-screws.jpg} \\
+\end{tabular}
+
+\begin{tabular}{ccc}
+\includegraphics[height=0.6\columnwidth]
+{photos/install-20181106/fan-assembled.jpg} &
+~~~ &
+\includegraphics[height=0.6\columnwidth]
+{photos/install-20181106/fan-installed.jpg} \\
+\end{tabular}
+\end{center}
+
+%
+%
+\clearpage
+\subsection{Air Filters}
+\label{sect-setup-howto-airfilt}
+
+\begin{tabular}{ccc}
+\multicolumn{3}{c}{%
+\includegraphics[height=0.5\columnwidth]
+{photos/install-20181106/air-taped.jpg}%
+} \\
+ & ~ & \\
+\includegraphics[height=0.5\columnwidth]
+{photos/install-20181106/air-batting.jpg} &
+~~~ &
+\includegraphics[height=0.5\columnwidth]
+{photos/install-20181106/air-installed.jpg} \\
+\end{tabular}
+
+%
+%
+\clearpage
+\subsection{Power Bars and Shelves}
+\label{sect-setup-howto-power}
+
+\textbf{NOTE} - The eye-tracker is not installed in the photographed version
+of the kiosk. Power cabling is placed in the eye-tracker bay.
+
+\begin{center}
+\includegraphics[width=0.9\columnwidth]
+{photos/install-20181106/power.jpg}
+\end{center}
+
+%
+%
+\clearpage
+\subsection{Small Monitor, Keyboard, and Mouse}
+\label{sect-setup-howto-smallmon}
+
+\textbf{NOTE} - The setup photographed did not have a mouse at the time of
+installation. A keyboard with integrated touchpad or other pointing device
+may be preferable.
+
+\begin{center}
+\includegraphics[width=0.9\columnwidth]
+{photos/install-20181106/small-mon.jpg}
+\end{center}
+
+%
+%
+\clearpage
+\subsection{Wireless Gateway}
+\label{sect-setup-howto-router}
+
+\textbf{NOTE} - The antennae for the wireless gateway should be far away
+from the metal walls, and nearby cabling should never run parallel to the
+antennae.
+
+\begin{center}
+\includegraphics[width=0.9\columnwidth]
+{photos/install-20181106/small-mon-gateway.jpg}
+\end{center}
+
+%
+%
+\clearpage
+\subsection{Neurarduino and Pump Control Box}
+\label{sect-setup-howto-ard}
+
+\begin{center}
+\includegraphics[width=0.9\columnwidth]
+{photos/install-20181106/ard-pbox-wiring.jpg}
+\end{center}
+
+%
+%
+\subsection{Unity Machine}
+\label{sect-setup-howto-unity}
+
+\begin{center}
+\begin{tabular}{c}
+\includegraphics[width=0.6\columnwidth]
+{photos/install-20181106/unity-wiring.jpg} \\
+\includegraphics[width=0.8\columnwidth]
+{photos/install-20181106/ard-unity-placement.jpg} \\
+\end{tabular}
+\end{center}
+
+%
+%
+\clearpage
+\subsection{LED Box}
+\label{sect-setup-howto-ledbox}
+
+\begin{center}
+\includegraphics[width=0.9\columnwidth]
+{photos/install-20181106/led-box.jpg}
+\end{center}
+
+%
+%
+\subsection{NeuroCam Machine}
+\label{sect-setup-howto-neurocam}
+
+\begin{center}
+\includegraphics[width=0.9\columnwidth]
+{photos/install-20181106/led-ncam-placement.jpg}
+\end{center}
+
+%
+%
+\clearpage
+\subsection{External Cabling and Pump}
+\label{sect-setup-howto-extcable}
+\label{sect-setup-howto-pump}
+
+\begin{tabular}{ccc}
+\includegraphics[height=0.5\columnwidth]
+{photos/install-20181106/ext-cabling.jpg} &
+~~~ &
+\includegraphics[height=0.5\columnwidth]
+{photos/install-20181106/pump.jpg} \\
+\end{tabular}
+
+%
+%
+\subsection{Camera Cover}
+\label{sect-setup-howto-cover}
+
+\begin{tabular}{ccc}
+\includegraphics[height=0.47\columnwidth]
+{photos/install-20181106/cover-front.jpg} &
+~~~ &
+\includegraphics[height=0.47\columnwidth]
+{photos/install-20181106/cover-back.jpg} \\
+\end{tabular}
+
+%
+%
+\clearpage
+\subsection{Pump Hoses}
+\label{sect-setup-howto-hoses}
+
+\fixme{Need photos for this.}
+
+%
+% This is the end of the file.

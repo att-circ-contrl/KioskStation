@@ -1,0 +1,64 @@
+% Kiosk manual - Top level
+% Written by Christopher Thomas.
+
+\documentclass[letterpaper,11pt]{report}
+\usepackage[letterpaper]{geometry}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage{float} % Needed for capital H option.
+
+\geometry{nohead,footskip=0.3in,margin=0.75in}
+
+% Force my paragraph style, darnit.
+\usepackage{indentfirst}
+\setlength{\parskip}{\baselineskip}
+
+% Custom macros.
+\newcommand{\fixme}[1]{\textbf{FIXME: #1}}
+
+% Document body.
+\begin{document}
+
+% Title page.
+
+\pagestyle{empty}
+
+\begin{center}
+%
+\vspace*{1in}
+{\Huge \bfseries Kiosk User Guide} \\
+{\footnotesize Written by Christopher Thomas -- \today.} \\
+%
+\vspace*{1in}
+\includegraphics[width=0.7\columnwidth]
+{photos/install-20181106/cover-front.jpg}
+%
+\end{center}
+%
+\clearpage
+%
+\pagestyle{plain}
+\pagenumbering{roman}
+\setcounter{page}{1}
+%
+\tableofcontents
+%
+\clearpage
+\pagestyle{plain}
+\setcounter{page}{1}
+\pagenumbering{arabic}
+% NOTE - "\thispagestyle" is used for part and chapter beginning pages,
+% and overrides \pagestyle. Redefine it to be harmless.
+\renewcommand{\thispagestyle}[1]{}
+
+% Not using "parts" for now; just chapters.
+
+% Daily use, and accessories (if we make any).
+\input{kiosk-manual-routine}
+\input{kiosk-manual-setup}
+\input{kiosk-manual-pumpbox}
+
+\end{document}
+
+%
+% This is the end of the file.

@@ -1,0 +1,107 @@
+% Kiosk manual - Routine activities.
+% Written by Christopher Thomas.
+
+\chapter{Routine Activities}
+\label{sect-routine}
+
+\section{Startup and Shutdown}
+\label{sect-routine-startupdown}
+
+To power on the electronics bay equipment:
+
+\begin{itemize}
+%
+\item Turn on the leftmost power bar, and check that the rightmost one
+(plugged into the left bar) is also turned on.
+%
+\item Check that the fans have spun up. They should turn on within a few 
+seconds of receiving power.
+%
+\item Check that the wireless gateway is on (there should be visible lights 
+blinking).
+
+If there are no lights, check that the gateway's power button is 
+turned on (if it has one). This is the \textbf{large, exposed} button - do 
+not press any small or inset buttons (those either reset the gateway to 
+default settings or tell it to use an insecure reconfiguration method - 
+both are bad).
+%
+\item Press and hold the NeuroCam machine's power button until it lights up
+and the machine's fan spins up.
+
+This should only take about a second. Do not hold it for longer than 3
+seconds - holding it 4 seconds or longer forces an immediate shutdown, which
+can cause corruption.
+%
+\item Press and hold the Unity machine's power button until it lights up and
+the machine's fan spins up.
+
+Per previous entry, this should only take about a second.
+%
+\item Check that the small monitor and the touch screen are both showing
+a Windows boot or login screen.
+
+If either one is not showing a screen, check that it's powered on.
+%
+\item Check that you can access the NeuroCam gateway, and that you can
+access the NeuroCam's control web page.
+
+The NeuroCam takes 30-60 seconds to boot, so be sure to leave sufficient
+time before accessing it.
+%
+\item Once everything's running properly, close and lock the electronics 
+bay doors.
+%
+\end{itemize}
+
+\clearpage
+To safely shut down the electronics bay equipment:
+
+\begin{itemize}
+%
+\item Log in to the NeuroCam's web page over the wireless network. Click
+the ``shutdown'' button.
+%
+\item Check that the NeuroCam's power light turns off. This may take
+several seconds.
+
+\begin{itemize}
+\item If the NeuroCam does not power off, it can be forced to power down by
+pressing and holding the power button for 4-5 seconds.
+
+\textbf{NOTE} - This may cause data corruption and other problems, so try to
+avoid this if possible.
+\end{itemize}
+%
+\item If the Unity machine is logged in:
+\begin{itemize}
+\item \fixme{key sequence for power-off goes here}.
+\end{itemize}
+%
+\item If the Unity machine is not logged in:
+\begin{itemize}
+\item Press a harmless key (such as ``shift'') to wake up the display.
+\item Press ``tab'' until the power icon is highlighted (this will take 
+multiple keystrokes).
+\item Hit ``enter'' to expand the power menu.
+\item Use the up and down cursor keys to highlight ``Shut Down''.
+\item Hit ``enter''.
+\end{itemize}
+%
+\item Check that the Unity machine's power light turns off. This may take
+several seconds.
+
+\begin{itemize}
+\item If the Unity machine does not power off, it can be forced to shut down
+per above. This may cause data corruption and other problems, as noted.
+\end{itemize}
+%
+\item Locate the power switch on the left power bar (the one whose cord
+goes outside), and turn it off.
+%
+\item Once everything's shut down, close and lock the electronics bay doors.
+%
+\end{itemize}
+
+%
+% This is the end of the file.
