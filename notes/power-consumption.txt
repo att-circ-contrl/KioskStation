@@ -1,0 +1,23 @@
+Power consumption for various devices:
+
+
+Intel NUC 6i7KYK (2018 NeuroCam/Unity):  120 W brick, 45 W TDP CPU
+Intel NUC 7i7DNKE (newer specced NeuroCam):  65 W brick, 15 W TDP CPU
+Intel NUC 8i7HVK (2021 Unity):  230 W brick, 100 W TDP CPU
+
+Pump LMI A74 series:  22 W average continuous (nominal)
+
+Touch screen ELO 2094:  20 W nominal
+
+Mini screen Eyoyo 12":  24 W brick (12 V 2 A)
+
+Logitech c920/c930 cameras:  Anecdotal 0.24 A focusing (1.2 W), USB 0.5A/2.5W.
+
+Tobii Pro Spectrum eye-tracker:  Nominal 60 W average, 96 W max at 24 V.
+
+Fan 120 mm (v2 kiosk) 1.9 W nom / 2.2 W max  (x4 fans)
+Fan 80 mm (v1 kiosk) 1.7 W nom / 2.0 W max  (x2 fans)
+
+Router Asus RT-N66:  30 W brick
+Router Asus N16:  24 W brick
+Router DLink DIR-655:  24 W brick
