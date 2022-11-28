@@ -7,9 +7,10 @@ non-human primates. The kiosk is mounted to one module of an apartment-cage
 (replacing one of the wall panels), allowing a monkey to freely play the
 game without direct supervision.
 
-**This repository is a work-in-progress.** While the intention is to
-provide all of the information and design files needed to make additional
-kiosks, only a subset of that information is provided at present.
+**This repository is a work-in-progress.**
+All of the CAD files and auxiliary information needed to make additional
+"revision 2" kiosks should be present (in `drawings-ext/rev2-cad-2021`),
+but organization could be better.
 
 The "Kiosk Station" project is copyright (c) 2021 by Vanderbilt University,
 and is released under the Creative Commons Attribution 4.0 International
@@ -22,8 +23,9 @@ This repository contains the following directories:
 
 * `datasheets` -- Vendor-supplied datasheets. Under vendor copyright.
 * `drawings-ext` --
-CAD files and screenshots for the "Version 1" Kiosk Station (superseded
-by the "Version 2" kiosk station).
+CAD files and screenshots for various versions of the Kiosk Station.
+Component models and documentation provided by third-party component vendors
+are under vendor copyright.
 * `drawings` -- Assorted mechanical drawings.
 * `manual` --
 LaTeX source and PDF output for the kiosk user manual (incomplete).
