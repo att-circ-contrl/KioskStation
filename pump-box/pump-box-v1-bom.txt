@@ -4,18 +4,25 @@ Item                         Digikey p/n     Unit Price     Qty      Cost
 
 box 3.25x2.25x1.5"           HM113-ND           5.56         1       5.56
 box 2x1.5.0.75"              HM375-ND           2.62         1       2.62
+
 transistor NPN TO-92         2N3904FS-ND        0.21         2       0.42
+
 resistor 1/4 W 10 kohm       10.0KXBK-ND        0.10         2       0.20
 resistor 1/4 W 3.3 kohm      3.3KXBK-ND         0.10         1       0.10
+
 proto board 1x1"             1568-1652-ND       1.50         1       1.50
+
 screw 4-40 nylon 1/4"        H542-ND            0.09         1       0.09
 standoff nylon 4-40 F/F 1/2" 36-1902C-ND        0.70         1       0.70
 screw metal 4-40 3/8"        HM1456-ND          0.11         1       0.11
+
 jack BNC panel mount         ARFX1064-ND        2.64         1       2.64
 jack audio 1/4" stereo panel SC1563-ND          3.06         1       3.06
 plug audio 1/4" stereo       SC1081-ND          4.39         1       4.39
 jack audio 3.5mm mono panel  SC1455-ND          2.54         2       5.08
+
 cable audio 3.5mm M/M 10'    TL634-ND           4.61         1       4.61
+
 button spst-no panel mount   CW158-ND           4.25         1       4.25
 
 Total:                                                              35.33
