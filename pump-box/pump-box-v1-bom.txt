@@ -19,7 +19,7 @@ screw metal 4-40 3/8"        HM1456-ND          0.11         1       0.11
 jack BNC panel mount         ARFX1064-ND        2.64         1       2.64
 jack audio 1/4" stereo panel SC1563-ND          3.06         1       3.06
 plug audio 1/4" stereo       SC1081-ND          4.39         1       4.39
-jack audio 3.5mm mono panel  SC1455-ND          2.54         2       5.08
+jack audio 3.5mm mono panel  SC238-ND           2.54         2       5.08
 
 cable audio 3.5mm M/M 10'    TL634-ND           4.61         1       4.61
 
