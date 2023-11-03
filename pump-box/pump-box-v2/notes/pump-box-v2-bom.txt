@@ -1,0 +1,13 @@
+Bill of materials for the v2 pump control dongle:
+
+Item				Mfg p/n		Digikey p/n		Qty
+
+transistor NPN SOT-23-3		SST3904T116	SST3904T116CT-ND	2
+
+resistor 0805 10 kOhm		RC0805FR-0710KL	311-10.0KCRCT-ND	2
+
+jack audio 3.5mm mono SMT	MJ-3523-SMT-TR	CP-3523MJCT-ND		1
+
+BNC jack (PCB R/A)		0731000154	WM5281-ND		1
+
+terminal block 3.81mm 5pos	284392-5	A98169-ND		1
