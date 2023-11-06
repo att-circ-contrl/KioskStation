@@ -1,0 +1,15 @@
+I'm designing the v2 case as something that could be manufactured by
+injection molding, in case we want lots of these.
+
+The main difficulty is that it'll have to be 3 pieces rather than 2 pieces,
+if we want the cable gland to enter through the end. Entering through a face
+could be 1 piece.
+
+
+For injection molding, thickness should be uniform (if possible), and
+geometry has to be "2.5-d" (no undercuts), with a draft angle of about 4
+degrees on vertical surfaces where practical.
+
+NOTE - Since the mold has two halves, you can cheat on "2.5-d" a little bit,
+but each half of the mold has to be 2.5-d. So in addition to "sand castle"
+part shapes you have "flying saucer" and "bowl" shapes available as well.
