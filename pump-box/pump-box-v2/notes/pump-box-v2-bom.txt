@@ -11,3 +11,6 @@ jack audio 3.5mm mono SMT	MJ-3523-SMT-TR	CP-3523MJCT-ND		1
 BNC jack (PCB R/A)		0731000154	WM5281-ND		1
 
 terminal block 3.81mm 5pos	284392-5	A98169-ND		1
+
+cable cland PG9			3210		3720-3210-ND		1
+(NOTE - 3211 is a fallback option. 3210 is black, 3211 is grey.)
