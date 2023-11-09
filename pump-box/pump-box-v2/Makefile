@@ -21,10 +21,9 @@ release: clean
 	cd boards/gerber; ../../$(UPATH)/pcb2seeed.sh $(SRCBASE) $(DSTBASE); mv *zip ../../$(DSTPATH)/$(DSTBASE)-pcb.zip
 	cd boards/gerber; ../../$(UPATH)/pcb2png.sh $(SRCBASE) $(DSTBASE)-layout.png; mv *png ../../$(DSTPATH)/
 	cp notes/*bom.txt $(DSTPATH)/$(DSTBASE)-bom.txt
+	cd meshes; zip ../$(DSTPATH)/$(DSTBASE)-meshes.zip case-mockup*stl
 
-# FIXME - Synchbox stuff stubbed out for reference.
-#	cp meshes/v2-frontpanel.stl packages/$(DSTBASE)-mesh.stl
-#	cp iges/v2-frontpanel.iges packages/$(DSTBASE)-model.iges
+# FIXME - Add IGES models when we have them.
 
 #
 # This is the end of the file.
