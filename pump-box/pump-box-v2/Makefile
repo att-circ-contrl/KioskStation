@@ -22,8 +22,6 @@ clean:
 
 release: clean release-adapter release-fob
 
-# FIXME - Add IGES models when we have them.
-
 release-adapter:
 	cd boards/gerber-adapter; \
 		../../$(UPATH)/pcb2seeed.sh $(SRCBOX) $(DSTBOX); \
@@ -42,6 +40,8 @@ release-fob:
 	cd boards/gerber-fob; \
 		../../$(UPATH)/pcb2png.sh $(SRCFOB) \
 		$(DSTFOB)-layout.png; mv *png ../../$(DSTPATH)/
+	cd meshes; zip ../$(DSTPATH)/$(DSTFOB)-meshes.zip $(SRCFOB)*stl
+	cd iges; zip ../$(DSTPATH)/$(DSTFOB)-iges.zip $(SRCFOB)*iges
 
 #
 # This is the end of the file.
