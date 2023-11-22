@@ -1,0 +1,10 @@
+Bill of materials for the v2 pump trigger fob:
+
+Item				Mfg p/n		Digikey p/n		Qty
+
+jack audio 3.5mm mono SMT	MJ-3523-SMT-TR	CP-3523MJCT-ND		1
+
+switch smt 12mm spst		K12SCS1.55NOLFTX	CKN10790CT-ND	1
+
+
+(This is the end of the file.)

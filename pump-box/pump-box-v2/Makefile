@@ -33,6 +33,7 @@ release-adapter:
 	cd meshes; zip ../$(DSTPATH)/$(DSTBOX)-meshes.zip case-mockup*stl
 
 release-fob:
+	cp notes/$(SRCFOB)-bom.txt $(DSTPATH)/$(DSTFOB)-bom.txt
 
 # FIXME - Add IGES models when we have them.
 
